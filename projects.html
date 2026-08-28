@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Apex Renovation &amp; Construction</title>
+<meta name="description" content="Recent renovation work by Apex Renovation & Construction, including a full flat renovation near Amberley Picture House, W9.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .photo-grid.gallery-filtered .photo-item.hidden { display: none; }
+  .photo-item { overflow: hidden; border: 1px solid var(--hairline); aspect-ratio: 4/3; }
+  .photo-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+  .photo-item:hover img { transform: scale(1.05); }
+  .photo-item.wide { grid-column: span 2; }
+  @media (max-width: 900px) { .photo-grid { grid-template-columns: 1fr 1fr; } .photo-item.wide { grid-column: span 2; } }
+  @media (max-width: 600px) { .photo-grid { grid-template-columns: 1fr; } .photo-item.wide { grid-column: span 1; } }
+
+  .case-hero { position: relative; aspect-ratio: 16/9; overflow: hidden; border: 1px solid var(--green); margin-bottom: 20px; }
+  .case-hero img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <span>1st Floor, Wellesley House, 98–102 Cranbrook Road, Ilford, IG1 4NH</span>
+      <a href="tel:+447956923185">+44 7956 923185</a>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a href="index.html" class="brand"><span class="word">APEX</span><span class="sub">Renovation &amp; Construction</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="header-cta">Request Quote</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow eyebrow-line">Projects</span>
+    <h1>Recent work.</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Projects</div>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow eyebrow-line">Case Study</span>
+      <h2 style="margin-top:20px;">Flat renovation, W9.</h2>
+      <p>A full renovation of a two-bedroom flat near Amberley Picture House, W9. New kitchen, new bathroom, new flooring throughout, and full redecoration — finished in 3 weeks.</p>
+    </div>
+
+    <div class="case-hero">
+      <img src="images/project-1/kitchen-living-2.png" alt="Renovated open-plan kitchen and living room, W9 flat renovation">
+    </div>
+
+    <div class="photo-grid" style="margin-bottom:60px;">
+      <div class="photo-item wide"><img src="images/project-1/living-room-2.png" alt="Living room after renovation, W9 flat"></div>
+      <div class="photo-item"><img src="images/project-1/bathroom.png" alt="New bathroom, W9 flat renovation"></div>
+      <div class="photo-item"><img src="images/project-1/kitchen-detail.png" alt="New kitchen units and worktop, W9 flat renovation"></div>
+      <div class="photo-item"><img src="images/project-1/bedroom-1.png" alt="Bedroom one after renovation, W9 flat"></div>
+      <div class="photo-item"><img src="images/project-1/bedroom-2-wide.png" alt="Bedroom two after renovation, W9 flat"></div>
+    </div>
+
+    <div class="split">
+      <div class="split-media">
+        <div class="quote-block">
+          <div class="mark">&ldquo;</div>
+          <div>
+            <blockquote>We turn up on time, price the job fairly, and finish what we start.</blockquote>
+            <cite>— Apex</cite>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow eyebrow-line">W9 · Flat Renovation</span>
+        <h3 style="margin-top:20px;">What we did</h3>
+        <p style="color:var(--muted); margin: 18px 0 22px;">A full renovation of a two-bedroom flat. New kitchen with black metro tile splashback, new bathroom with a walk-in shower and marble-effect tiling, new flooring throughout both bedrooms and the living space, and a full repaint and redecoration.</p>
+        <ul style="margin-top:24px;">
+          <li style="display:grid; grid-template-columns:130px 1fr; gap:12px; padding:14px 0; border-top:1px solid var(--hairline); font-size:0.94rem;"><span style="font-family:var(--sans); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">Location</span><span style="font-family:var(--serif); color:var(--green);">W9, London</span></li>
+          <li style="display:grid; grid-template-columns:130px 1fr; gap:12px; padding:14px 0; border-top:1px solid var(--hairline); font-size:0.94rem;"><span style="font-family:var(--sans); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">Duration</span><span style="font-family:var(--serif); color:var(--green);">3 weeks</span></li>
+          <li style="display:grid; grid-template-columns:130px 1fr; gap:12px; padding:14px 0; border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); font-size:0.94rem;"><span style="font-family:var(--sans); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted);">Scope</span><span style="font-family:var(--serif); color:var(--green);">Kitchen, bathroom, flooring, decoration</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Like what you see? Let's talk.</h2>
+    <p>Free consultation, fixed-price quote within a few days. No obligation.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold btn-lg">Get a Free Quote</a>
+      <a href="tel:+447956923185" class="btn btn-outline-cream btn-lg">+44 7956 923185</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><div class="word">APEX</div><div class="sub">Renovation &amp; Construction</div><p>A small team of builders based in Ilford, working on renovations, kitchens, extensions and bathrooms across London and Essex.</p></div>
+    <div><h5>Site</h5><div class="footer-links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div></div>
+    <div><h5>Services</h5><div class="footer-links"><a href="services.html#full-renovation">Full Renovation</a><a href="services.html#kitchen">Kitchens</a><a href="services.html#bathroom">Bathrooms</a><a href="services.html#extensions">Extensions</a><a href="services.html#exterior">Exterior &amp; Flooring</a></div></div>
+    <div class="footer-contact"><h5>Contact</h5><p>1st Floor, Wellesley House<br>98–102 Cranbrook Road<br>Ilford, IG1 4NH</p><p style="margin-top:14px;"><a href="tel:+447956923185">+44 7956 923185</a></p><p><a href="mailto:apexrefurbishmentuk@gmail.com">apexrefurbishmentuk@gmail.com</a></p></div>
+  </div>
+  <div class="container footer-bottom">
+    <div>© 2026 Apex Renovation &amp; Construction. All rights reserved.</div>
+    <div class="social"><a href="#">Instagram</a><a href="#">Houzz</a><a href="#">Checkatrade</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
