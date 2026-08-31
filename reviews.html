@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reviews | Apex Renovation &amp; Construction</title>
-<meta name="description" content="Client reviews for Apex Renovation & Construction, verified on Google, Checkatrade and Houzz.">
+<meta name="description" content="Reviews from Apex Renovation & Construction clients, plus an option to leave your own.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -44,34 +44,16 @@
 
 <section class="section section-cream">
   <div class="container">
-    <div class="reviews-lead">
-      <div class="big">4.<em>9</em>★</div>
-      <div class="lbl-block">
-        <div class="stars">★★★★★</div>
-        <p>Based on client reviews across Google, Checkatrade and Houzz</p>
-      </div>
+    <div class="section-head center">
+      <span class="eyebrow eyebrow-line">From Our Clients</span>
+      <h2 style="margin-top:20px;">What people say after the job's done.</h2>
     </div>
 
-    <div class="reviews-grid">
-      <div class="review">
+    <div class="reviews-grid" style="grid-template-columns: 1fr; max-width:700px; margin:0 auto;">
+      <div class="review" style="border-left:none; padding-left:0;">
         <div class="stars">★★★★★</div>
-        <blockquote>&ldquo;Apex did our kitchen and bathroom without a single missed deadline. Great communication throughout and the finish is excellent.&rdquo;</blockquote>
-        <cite><strong>Sarah T.</strong> · East London</cite>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <blockquote>&ldquo;Fixed price, no surprises, tidy on site every day. We'd recommend them to anyone renovating.&rdquo;</blockquote>
-        <cite><strong>David R.</strong> · Essex</cite>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <blockquote>&ldquo;From the quote through to handover, everything was on schedule. Our loft conversion looks great.&rdquo;</blockquote>
-        <cite><strong>John W.</strong> · East London</cite>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <blockquote>&ldquo;The rear extension exceeded our expectations. Weekly updates meant we always knew where things stood.&rdquo;</blockquote>
-        <cite><strong>Emma L.</strong> · Essex</cite>
+        <blockquote>&ldquo;Kitchen and bathroom took about 3 weeks, which is what they quoted. There was a short delay waiting on a tile delivery but they let us know straight away. Good finish, no complaints.&rdquo;</blockquote>
+        <cite><strong>Flat owner</strong> · W9, London</cite>
       </div>
     </div>
   </div>
@@ -80,13 +62,35 @@
 <section class="section section-cream-soft">
   <div class="container">
     <div class="section-head center">
-      <span class="eyebrow eyebrow-line">Verified Reviews</span>
-      <h2 style="margin-top:20px;">Where you'll find us.</h2>
+      <span class="eyebrow eyebrow-line">Worked With Us?</span>
+      <h2 style="margin-top:20px;">Leave a review.</h2>
+      <p>Tell us how the job went. We read every review — it may be added to this page.</p>
     </div>
-    <div class="platforms-grid">
-      <div class="platform"><h4>Google Reviews</h4><div class="stars">★★★★★</div><p>4.9 average</p></div>
-      <div class="platform"><h4>Checkatrade</h4><div class="stars">★★★★★</div><p>9.8 / 10</p></div>
-      <div class="platform"><h4>Houzz</h4><div class="stars">★★★★★</div><p>4.8 average</p></div>
+
+    <div class="contact-form" style="max-width:640px; margin:0 auto;">
+      <h4>Your Review</h4>
+      <form data-form action="https://formspree.io/f/moeqqplp" method="POST">
+        <input type="hidden" name="_subject" value="New review submitted — Apex website">
+        <div class="field-row">
+          <div class="field"><label for="r-name">Your Name</label><input type="text" id="r-name" name="name" required></div>
+          <div class="field"><label for="r-area">Area</label><input type="text" id="r-area" name="area" placeholder="e.g. W9, London"></div>
+        </div>
+        <div class="field">
+          <label for="r-rating">Rating</label>
+          <select id="r-rating" name="rating">
+            <option>★★★★★ — Excellent</option>
+            <option>★★★★☆ — Good</option>
+            <option>★★★☆☆ — Average</option>
+            <option>★★☆☆☆ — Below Average</option>
+            <option>★☆☆☆☆ — Poor</option>
+          </select>
+        </div>
+        <div class="field"><label for="r-review">Your Review</label><textarea id="r-review" name="review" placeholder="What was the job, and how did it go?" required></textarea></div>
+        <button type="submit" class="btn btn-green btn-block">Submit Review</button>
+        <p class="form-note">This sends your review to our team for approval — it won't appear on the site automatically.</p>
+      </form>
+      <div class="form-success">Thanks for taking the time — we've received your review.</div>
+      <div class="form-error" style="display:none; margin-top:18px; padding:16px 20px; background:#F6E3DE; color:#8A3B24; font-family:var(--sans); font-size:0.9rem;">Something went wrong sending that — please try again, or email us directly at <a href="mailto:apexrenovationlondon@gmail.com" style="text-decoration:underline;">apexrenovationlondon@gmail.com</a>.</div>
     </div>
   </div>
 </section>
@@ -107,7 +111,7 @@
     <div class="footer-brand"><div class="word">APEX</div><div class="sub">Renovation &amp; Construction</div><p>A small team of builders based in Ilford, working on renovations, kitchens, extensions and bathrooms across London and Essex.</p></div>
     <div><h5>Site</h5><div class="footer-links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div></div>
     <div><h5>Services</h5><div class="footer-links"><a href="services.html#full-renovation">Full Renovation</a><a href="services.html#kitchen">Kitchens</a><a href="services.html#bathroom">Bathrooms</a><a href="services.html#extensions">Extensions</a><a href="services.html#exterior">Exterior &amp; Flooring</a></div></div>
-    <div class="footer-contact"><h5>Contact</h5><p>1st Floor, Wellesley House<br>98–102 Cranbrook Road<br>Ilford, IG1 4NH</p><p style="margin-top:14px;"><a href="tel:+447956923185">+44 7956 923185</a></p><p><a href="mailto:apexrefurbishmentuk@gmail.com">apexrefurbishmentuk@gmail.com</a></p></div>
+    <div class="footer-contact"><h5>Contact</h5><p>1st Floor, Wellesley House<br>98–102 Cranbrook Road<br>Ilford, IG1 4NH</p><p style="margin-top:14px;"><a href="tel:+447956923185">+44 7956 923185</a></p><p><a href="mailto:apexrenovationlondon@gmail.com">apexrenovationlondon@gmail.com</a></p></div>
   </div>
   <div class="container footer-bottom">
     <div>© 2026 Apex Renovation &amp; Construction. All rights reserved.</div>
@@ -115,6 +119,9 @@
   </div>
 </footer>
 
+<a href="https://wa.me/447956923185?text=Hi%20Apex%2C%20I%27d%20like%20a%20quote%20for%20a%20renovation." class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.892.529 3.716 1.531 5.302L2 22l4.83-1.507A9.958 9.958 0 0012.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.2a8.174 8.174 0 01-4.396-1.28l-.316-.19-2.867.894.914-2.803-.206-.325A8.166 8.166 0 013.8 12c0-4.522 3.679-8.2 8.201-8.2 4.521 0 8.2 3.678 8.2 8.2 0 4.521-3.679 8.2-8.2 8.2z"/></svg>
+</a>
 <script src="js/main.js"></script>
 </body>
 </html>

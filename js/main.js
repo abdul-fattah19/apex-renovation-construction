@@ -68,16 +68,39 @@ document.addEventListener('DOMContentLoaded', function () {
     update();
   });
 
-  // Form (no backend — simulated success)
+  // Forms — submit to Formspree via fetch, no page reload
   document.querySelectorAll('form[data-form]').forEach(function (form) {
+    var success = form.parentElement.querySelector('.form-success');
+    var errorBox = form.parentElement.querySelector('.form-error');
+    var submitBtn = form.querySelector('button[type="submit"]');
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var success = form.parentElement.querySelector('.form-success');
-      form.reset();
-      if (success) {
-        success.classList.add('show');
-        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
+      if (errorBox) errorBox.style.display = 'none';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.dataset.label = submitBtn.dataset.label || submitBtn.textContent; submitBtn.textContent = 'Sending…'; }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(function (response) {
+          if (response.ok) {
+            form.reset();
+            if (success) {
+              success.classList.add('show');
+              success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          } else {
+            if (errorBox) errorBox.style.display = 'block';
+          }
+        })
+        .catch(function () {
+          if (errorBox) errorBox.style.display = 'block';
+        })
+        .finally(function () {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitBtn.dataset.label; }
+        });
     });
   });
 });
